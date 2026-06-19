@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMBIT MEDIA | L'Agence Digitale qui a un Coup d'Avance</title>
+    
+    <!-- Polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icônes FontAwesome (WhatsApp & Echecs) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS pour un style moderne et responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        gambit: {
+                            black: '#0a0a0a',
+                            dark: '#141414',
+                            red: '#E60000',
+                            redhover: '#FF1A1A',
+                            white: '#F5F5F5'
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #F5F5F5;
+            /* Motif d'échiquier très subtil en arrière-plan */
+            background-image: 
+                linear-gradient(rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.95)),
+                repeating-conic-gradient(#141414 0% 25%, #0a0a0a 0% 50%);
+            background-size: 100% 100%, 60px 60px;
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #a3a3a3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(20, 20, 20, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(230, 0, 0, 0.5);
+        }
+
+        /* Délai pour les animations d'apparition */
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-sans overflow-x-hidden">
+
+    <header class="w-full py-6 px-4 md:px-8 flex justify-center items-center border-b border-white/10 bg-gambit-black/80 backdrop-blur-md fixed top-0 z-50">
+        <div class="flex items-center gap-3 cursor-pointer">
+            <i class="fa-solid fa-chess-knight text-gambit-red text-3xl"></i>
+            <h1 class="text-2xl md:text-3xl font-black tracking-widest text-white uppercase">
+                Gambit <span class="text-gambit-red">Media</span>
+            </h1>
+        </div>
+    </header>
+
+    <main class="flex-grow flex flex-col justify-center items-center pt-32 pb-20 px-4 md:px-6 relative">
+        
+        <!-- Effet de lueur rouge en arrière-plan -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-gambit-red rounded-full blur-[150px] opacity-20 pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center z-10">
+            <div class="inline-block px-4 py-1.5 rounded-full border border-gambit-red/30 bg-gambit-red/10 text-gambit-red text-sm font-bold tracking-wider mb-6 opacity-0 animate-fade-in-up">
+                VOTRE CROISSANCE N'EST PAS UN JEU DE HASARD
+            </div>
+            
+            <h2 class="text-5xl md:text-7xl font-black mb-6 leading-tight opacity-0 animate-fade-in-up delay-100 uppercase">
+                Échec et Mat <br/> <span class="text-gradient">à vos concurrents.</span>
+            </h2>
+            
+            <p class="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed opacity-0 animate-fade-in-up delay-200">
+                L'agence digitale qui propulse votre chiffre d'affaires avec des stratégies sur-mesure. Passez à l'offensive dès aujourd'hui.
+            </p>
+
+            <!-- Boutons de Conversion WhatsApp -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6 w-full max-w-2xl mx-auto opacity-0 animate-fade-in-up delay-300">
+                
+                <!-- Bouton WhatsApp 1 (Principal Rouge) -->
+                <a href="https://wa.me/212606011273" target="_blank" rel="noopener noreferrer" 
+                   class="group relative w-full sm:w-auto flex items-center justify-center gap-3 bg-gambit-red hover:bg-gambit-redhover text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-[0_0_20px_rgba(230,0,0,0.3)] hover:shadow-[0_0_30px_rgba(230,0,0,0.6)] hover:-translate-y-1">
+                    <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i>
+                    <span>Contact : 06 06 01 12 73</span>
+                </a>
+
+                <!-- Bouton WhatsApp 2 (Secondaire Contour Blanc) -->
+                <a href="https://wa.me/212660827060" target="_blank" rel="noopener noreferrer" 
+                   class="group w-full sm:w-auto flex items-center justify-center gap-3 bg-transparent border-2 border-white hover:bg-white hover:text-gambit-black text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:-translate-y-1">
+                    <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i>
+                    <span>Contact : 06 60 82 70 60</span>
+                </a>
+
+            </div>
+            <p class="mt-6 text-sm text-gray-500 opacity-0 animate-fade-in-up delay-300"><i class="fa-solid fa-bolt text-yellow-500 mr-2"></i>Réponse rapide sur WhatsApp</p>
+        </div>
+
+        <div class="w-full max-w-6xl mx-auto mt-32 grid grid-cols-1 md:grid-cols-3 gap-8 px-4 z-10 opacity-0 animate-fade-in-up delay-300">
+            
+            <!-- Carte 1 -->
+            <div class="glass-card p-8 rounded-2xl text-left">
+                <div class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-chess-board text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Stratégie Implacable</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Nous analysons votre marché pour déployer une stratégie digitale millimétrée, conçue pour dominer votre secteur.</p>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="glass-card p-8 rounded-2xl text-left relative overflow-hidden">
+                <div class="absolute -right-4 -top-4 w-24 h-24 bg-gambit-red/20 rounded-full blur-2xl"></div>
+                <div class="w-14 h-14 bg-gambit-red/20 rounded-xl flex items-center justify-center mb-6 border border-gambit-red/30">
+                    <i class="fa-solid fa-chess-rook text-2xl text-gambit-red"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Acquisition Massive</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Attirez un flux continu de prospects qualifiés grâce à nos campagnes publicitaires ciblées et percutantes.</p>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="glass-card p-8 rounded-2xl text-left">
+                <div class="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-chess-queen text-2xl text-white"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Conversion Royale</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Nous transformons vos visiteurs en clients fidèles. Chaque clic compte, chaque dirham investi rapporte.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="w-full border-t border-white/10 py-8 mt-auto z-10 bg-gambit-black relative">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between opacity-80">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <i class="fa-solid fa-chess-knight text-gambit-red"></i>
+                <span class="font-bold tracking-wider uppercase text-sm">Gambit Media</span>
+            </div>
+            <p class="text-xs text-gray-500 text-center">
+                &copy; 2026 Gambit Media Agadir. Tous droits réservés. Votre partenaire digital stratégique.
+            </p>
+            <div class="flex gap-4 mt-4 md:mt-0">
+                <!-- Liens réseaux sociaux (à compléter plus tard) -->
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+                <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
